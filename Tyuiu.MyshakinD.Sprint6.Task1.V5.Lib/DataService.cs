@@ -4,16 +4,18 @@ namespace Tyuiu.MyshakinD.Sprint6.Task1.V5.Lib {
     public class DataService : ISprint6Task1V5 {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
-            double[] valueArray;
             int len = stopValue - startValue + 1;
-            valueArray = new double[len];
+            double[] res = new double[len];
+
             int count = 0;
-            for (int x = startValue; x <= stopValue; x++)
+
+            for (int i = startValue; i <= stopValue; i++)
             {
-                valueArray[count] = Math.Round(Math.Sin(x) + (Math.Cos(2 * x) / 2) - 1.5 * x, 2);
+                res[count] = Math.Round(Math.Sin(i) + (Math.Cos(2 * i) / 2) - 1.5 * i, 2);
                 count++;
             }
-            return valueArray;
+
+            return res;
         }
     }
 }
