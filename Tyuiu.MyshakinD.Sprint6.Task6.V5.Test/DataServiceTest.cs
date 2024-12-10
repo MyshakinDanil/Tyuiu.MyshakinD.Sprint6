@@ -12,7 +12,7 @@ namespace Tyuiu.MyshakinD.Sprint6.Task6.V5.Test {
 
             string resstr = ds.CollectTextFromFile(path);
 
-            string wait = " UPPfdzU ulzPXa UpGwjzkBH xvfsWpk KyiidnDo FVUh XNQBU sMLuPzlvneiTo XIpph QN hZznJL bWk Rz tfouGdncXlJ";
+            string wait = "ulzPXa sMLuPzlvneiTo tfouGdncXlJ";
 
             Assert.AreEqual(wait, resstr);
         }

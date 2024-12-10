@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using System.Diagnostics.Tracing;
+using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.MyshakinD.Sprint6.Task6.V5.Lib {
     public class DataService : ISprint6Task6V5 {
@@ -12,14 +13,18 @@ namespace Tyuiu.MyshakinD.Sprint6.Task6.V5.Lib {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (line.Contains("l"))
+                    string[] words = line.Split(' ');
+                    foreach (string word in words)
                     {
-                        resstr = resstr + " " + line;
+                        if (word.Contains("l"))
+                        {
+                            resstr = resstr + " " + word;
+                        }
                     }
                 }
             }
 
-            return resstr;
+            return resstr[1..];
         }
     }
 }
