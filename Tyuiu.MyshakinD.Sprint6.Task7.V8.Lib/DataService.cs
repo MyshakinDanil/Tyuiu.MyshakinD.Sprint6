@@ -24,20 +24,26 @@ namespace Tyuiu.MyshakinD.Sprint6.Task7.V8.Lib {
                 }
             }
 
-            int xCol = 8;
+            int xCol = 7;
 
+            int[,] resMatrix = new int[rows, columns];
+            
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0;j < columns; j++)
                 {
-                    if (arrayValues[i, j] != 5 && i == 7)
+                    if (arrayValues[i, j] != 5 && i == xCol)
                     {
-                        arrayValues[i, j] = -1;
+                        resMatrix[i, j] = -1;
+                    }
+                    else
+                    {
+                        resMatrix[i, j] = arrayValues[i, j];
                     }
                 }
             }
 
-            return arrayValues;
+            return resMatrix;
         }
     }
 }
