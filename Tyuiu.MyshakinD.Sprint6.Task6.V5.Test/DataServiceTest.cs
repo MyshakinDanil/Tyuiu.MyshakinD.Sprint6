@@ -10,7 +10,7 @@ namespace Tyuiu.MyshakinD.Sprint6.Task6.V5.Test {
 
             string path = @"C:\DataSprint5\InPutFileTask6V5.txt";
 
-            string resstr = ds.CollectTextFromFile("l", path);
+            string resstr = ds.CollectTextFromFile(path);
 
             string wait = " UPPfdzU ulzPXa UpGwjzkBH xvfsWpk KyiidnDo FVUh XNQBU sMLuPzlvneiTo XIpph QN hZznJL bWk Rz tfouGdncXlJ";
 
