@@ -32,7 +32,7 @@ namespace Tyuiu.MyshakinD.Sprint6.Task7.V8.Lib {
             {
                 for (int j = 0;j < columns; j++)
                 {
-                    if (arrayValues[i, j] != 5 && i == xCol)
+                    if (arrayValues[i, j] != 5 && j == xCol)
                     {
                         resMatrix[i, j] = -1;
                     }
