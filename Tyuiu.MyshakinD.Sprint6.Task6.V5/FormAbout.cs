@@ -14,5 +14,15 @@ namespace Tyuiu.MyshakinD.Sprint6.Task6.V5 {
         {
             InitializeComponent();
         }
+
+        private void FormAbout_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonOK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
